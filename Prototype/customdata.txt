@@ -1,0 +1,62 @@
+[Loader]
+CargoGroupName=Ship Cargos
+StoreGroupName=Base Cargos
+ReportOutputName = Ship Cargo LCD
+ReportOutputIndex = 0
+Loadout = Default
+
+[Manager]
+OutputMode = 0
+
+[Autopilot]
+TP = 20
+TI = 0.000
+TD = 8
+RP = 5
+RI = 0.005
+RD = 2
+MaxCruiseSpeed=90
+MaxCombatSpeed=100
+
+[Hornet]
+FireDist=800
+EngageDist=700
+AlertDist=1200
+ProjectileSpeed=300
+EngageTheta=0.2
+FireTolerance=0.05
+OwnSpeedMultiplier=0.1
+
+[Torpedo] 
+TorpedoTubeCount = 16
+; NOTE: [Torpedo_SM] & [Torpedo_LG] work for specific torpedo groups, otherwise it uses the default tag.
+[Torpedo_SM] 
+GuidanceStartSeconds = 2
+PlungeDist = 800
+HitOffset = 0
+ReloadCooldownMS = 3500
+
+AutoFire = False
+AutoFireRange = 3000
+AutoFireTubeMS = 500;
+AutoFireTargetMS = 2000;
+AutoFireRadius = 30; In Meters
+AutoFireSizeMask = 1; 1 = LG 2 = SM 3 = BOTH
+
+Trickshot = false
+TrickshotDistance = 1200
+TrickshotTerminalDistance = 1000
+
+Evasion = False
+EvasionDistStart = 2000
+EvasionDistEnd = 800
+EvasionAdjTimeMin = 500
+EvasionAdjTimeMax = 1000
+EvasionOffsetMagnitude = 5
+
+
+[Intel]
+Rank = 1
+
+[SetUp]
+ToolbarOutput=True
